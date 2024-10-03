@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --background-color: transparent;
+    --text-color: black;
+    --letter-spacing: 0.1rem;
+    --light-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    --dark-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    font-size: 20px;
+    line-height: 1.5;
+    background: url("./bg-image.jpg");
+}
+
+main {          /* To align box at center*/
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background-color: var(--background-color);
+    width: 30vw;
+    border: 1px solid #000;
+    border-radius: 15px;
+    box-shadow: 5px 8px 10px rgba(0,0,0,0.5);
+    height: 45vh;
+}
+
+h1 {
+    letter-spacing: var(--letter-spacing);
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#value {
+    font-size: 5rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .btn {
+    margin-top: -10px;
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    margin-left: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.container .btn:hover {
+    background-color: #000000;
+    color: white;
+    font-weight: 600;
+}
